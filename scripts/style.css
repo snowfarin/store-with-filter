@@ -1,0 +1,96 @@
+/* GLOBAL  */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+body{
+  padding: 5rem;
+}
+
+p{
+  font-size :3rem;
+}
+
+/* BODY DECORATIONS */
+
+
+.fullbody{
+  max-height:90vh;
+  max-width: 90vw;
+  border:solid 1px black;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.navbar{
+  max-height: 10%;
+  width:100%;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.bodycover{
+  display: flex;
+  flex-direction: row;
+}
+
+.sidebar{
+  flex:1;
+  width:10vw;
+  border:1px black solid;
+  height:85vh;
+  font-size:2rem ;
+}
+
+
+
+.mainbody{
+  flex:4;
+  height: 85vh;
+  border:1px black solid;
+  display: flex;
+  padding: 2rem;
+}
+
+.box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(76, 109, 199);
+  margin: 6px;
+  height:20rem;
+  width:20rem;
+  border: 5px solid black;
+}
+
+#boxhide{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow: scroll;
+}
+
+#detailview{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height:40vh;
+  width:60vw
+}
+
+#hide{
+  display: none;
+}
+
+.show{
+  background: coral;
+}
+
+

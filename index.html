@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/scripts/style.css">
+  <title>happy</title>
+</head>
+
+<body>
+  <div class="fullbody">
+    <div class="navbar">
+      <h1>This the title</h1>
+    </div>
+    <div class="bodycover">
+      <div class="sidebar">
+        <div class="search">
+          <label>Brand :</label>
+          <table>
+            <tr>
+              <td><input type="checkbox" value="samsung" onclick="handlecheck(this,'samsung')"></td>
+              <td>
+                <p>samsung</p>
+              </td>
+            </tr>
+            <tr>
+              <td><input id="brand" type="checkbox" value="nokia" onclick="handlecheck(this,'nokia')">
+              </td>
+              <td>
+                <p>nokia</p>
+              </td>
+            </tr>
+            <tr>
+              <td><input id="brand" type="checkbox" value="iphone" onclick="handlecheck(this,'iphone')"></td>
+              <td>
+                <p>iphone</p>
+              </td>
+            </tr>
+            <tr>
+              <td><input id="brand" type="checkbox" value="sony" onclick="handlecheck(this,'sony')">
+              </td>
+              <td>
+                <p>sony</p>
+              </td>
+            </tr>
+          </table>
+          <label>Storage</label>
+          <table>
+            <tr>
+              <td><input type="checkbox" id="storage" value="512" onclick="handlecheck(this,'five12')">
+              </td>
+              <td>
+                <p>512</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" id="storage" value='64' onclick="handlecheck(this,'sistyfour'),Classhandleadd()">
+              </td>
+              <td>
+                <p>64</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <button id='clearfilter'>clearfilter</button>
+      </div>
+      <div class="mainbody">
+        <div class='detailview hide'></div>
+        <div id="boxhide">
+          <div class="box samsung five12 ">
+            <h1>samsung 512</h1><button onclick="details('samsung-512')">samsung 512</button>
+          </div>
+          <div class="box samsung sistyfour ">
+            <h1>samsung 64</h1><button onclick="details('samsung-64')">samsung 64</button>
+          </div>
+          <div class="box nokia five12 ">
+            <h1>nokia 512</h1>
+            <button onclick="details('nokia-512')">nokia 512</button>
+          </div>
+          <div class="box iphone five12">
+            <h1>iphone 512</h1>
+            <button onclick="details('iphone-512')">iphone 512</button>
+          </div>
+          <div class="box sony five12">
+            <h1>sony 512</h1>
+            <button onclick="details('sony-512')">sony 512</button>
+          </div>
+        </div>
+        <button onclick="{()=>window.location.replace('/')}"></button>
+      </div>
+    </div>
+  </div>
+  <script src="./scripts/script.js" defer></script>
+</body>
+
+</html>
